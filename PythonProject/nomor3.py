@@ -1,5 +1,5 @@
 #penyusunan nama
-print("----MENYUSUN NAMA BERDASARKAN PANJANG KARAKTER----")
+print("----MENYUSUN NAMA BERDASARKAN ABJAD----")
 banyakSiswa = int(input("Banyaknya siswa :"))
 
 dataMahasiswa = []
@@ -12,7 +12,7 @@ while i < banyakSiswa:
 
 dataMahasiswa.sort()
 i = 0
-print("----SUSUNAN NAMA----")
+print("----SUSUNAN NAMA BERDASARKAN ABJAD----")
 #menentukan jumlah karakter huruf
 while i < len(dataMahasiswa):
     print(dataMahasiswa[i], "(", len(dataMahasiswa[i]), "karakter )")

@@ -19,20 +19,17 @@ pilihanMenu = input("Pilihan menu : ")
 a = "A"
 b = "B"
 #jika pilihan tambah data buah
+keys = list(buah.keys())
+
+#jika pilihan tambah data buah
 if pilihanMenu == a:
     inputNamaBuah = input("Masukkan nama buah :")
-    inputHargaBuah = int(input("Masukkan harga satuan :"))
-    for x in buah.keys():
-        if inputNamaBuah == x:
-            #jika nama sudah ada
-            print("Nama buah sudah ada")
-            break
-        else:
-            buah[inputNamaBuah] = inputHargaBuah
-            print("Data buah")
-            for y in buah:
-                print("-", y, ' : ', buah[y])
-            break
+    if inputNamaBuah == keys[0] or inputNamaBuah == keys[1] or inputNamaBuah == keys[2] or inputNamaBuah == keys[3]:
+        print("Nama buah sudah ada")
+    else:
+        inputHargaBuah = int(input("Masukkan harga satuan :"))
+        buah[inputNamaBuah] = inputHargaBuah
+        print(buah)
 
 #jika pilihan beli buah
 elif pilihanMenu == b:

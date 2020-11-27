@@ -7,8 +7,9 @@ def dataStat(x):
     data.append(int(rerata))
     data.append(max(x))
     data.append(min(x))
-    print(data)
+    print("List dari hasil rerata, max, dan min : ", data)
 
 
 x = [3, 4, 1, 5, 2]
+print("List pertama : ", x)
 dataStat(x)

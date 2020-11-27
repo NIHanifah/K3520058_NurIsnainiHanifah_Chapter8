@@ -1,3 +1,4 @@
+#Mencari nilai akhir tertinggi
 nilaiMhs = [
     {'nim' : 'A01', 'nama' : 'Amir', 'mid' : 50, 'uas' : 80},
     {'nim' : 'A02', 'nama' : 'Budi', 'mid' : 40, 'uas' : 90},
@@ -6,6 +7,7 @@ nilaiMhs = [
     {'nim' : 'A05', 'nama' : 'Fifi', 'mid' : 70, 'uas' : 40},
 ]
 
+#menghitung nilai akhir
 def hitungNilaiAkhir():
     dataNilaiAkhir = []
     i = 0

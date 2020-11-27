@@ -27,4 +27,5 @@ elif namaBuah == buah3:
 elif namaBuah == buah4:
     harga = buah['duku'] * kilo
 
+print("--------------------------")
 print("Total harga buah = ", harga)

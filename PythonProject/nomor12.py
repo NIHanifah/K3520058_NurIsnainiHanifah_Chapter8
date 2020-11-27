@@ -20,18 +20,17 @@ c = "A"
 d = "B"
 e = "C"
 
+keys = list(buah.keys())
+
 #jika pilihan tambah data buah
 if pilihanMenu == c:
     inputNamaBuah = input("Masukkan nama buah :")
-    inputHargaBuah = int(input("Masukkan harga satuan :"))
-    for x in buah.keys():
-        if inputNamaBuah == x:
-            print("Nama buah sudah ada")
-            break
-        else:
-            buah[inputNamaBuah] = inputHargaBuah
-            print(buah)
-            break
+    if inputNamaBuah == keys[0] or inputNamaBuah == keys[1] or inputNamaBuah == keys[2] or inputNamaBuah == keys[3]:
+        print("Nama buah sudah ada")
+    else:
+        inputHargaBuah = int(input("Masukkan harga satuan :"))
+        buah[inputNamaBuah] = inputHargaBuah
+        print(buah)
 
 #jika pilihan beli
 elif pilihanMenu == d:
@@ -66,15 +65,9 @@ elif pilihanMenu == d:
 
 #jika pemiliha hapus data
 elif pilihanMenu == e:
-    print(buah)
     inputNamaBuah = input("Masukkan nama buah :")
-    i = 0
-    while i < len(buah):
-        for xx in buah:
-            if inputNamaBuah == xx:
-                del buah[inputNamaBuah]
-                print(buah)
-            elif inputNamaBuah != xx:
-                print("Nama buah tidak ditemukan")
-        i += 1
-            
+    if inputNamaBuah == keys[0] or inputNamaBuah == keys[1] or inputNamaBuah == keys[2] or inputNamaBuah == keys[3]:
+        del buah[inputNamaBuah]
+        print(buah)
+    else:
+        print("Nama buah tidak ditemukan")
