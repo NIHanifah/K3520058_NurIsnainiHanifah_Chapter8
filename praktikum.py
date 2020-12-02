@@ -1,6 +1,6 @@
 #membuat list
 print("-----MEMBUAT LIST-----")
-a = [1, 5, 6, 3, 6, 9, 11, 12]
+a = [1, 5, 6, 3, 6, 9, 11, 20, 12]
 b = [7, 4, 5, 6, 7, 1, 12, 5, 9]
 print("a = ", a)
 print("b = ", b)
@@ -27,9 +27,11 @@ b.sort()
 print("Urutan b = ", b)
 
 #penggabungan list
-print("----Penggabungan List a dan B----")
-c = a[0:7] + b[2:9]
+print("----Pengambilan Sub a dan Sub b----")
+c = a[0:8]
+d = b[2:11]
 print("c = ", c)
+print("d = ", d)
 
 #membuat list e yang hasil dari penjumlahan dua list
 print("----LIST E(PENJUMLAHAN C DAN D)----")
