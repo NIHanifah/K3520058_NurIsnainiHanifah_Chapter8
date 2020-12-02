@@ -1,6 +1,8 @@
 #pembelian buah dengan pimilahn
 print("----PEMBELIAN BUAH DENGAN PEMILIHAN----")
 
+#!!!GUNAKAN HURUF KECIL SAAT INPUT BUAH!!!
+
 buah = {
     'apel' : 5000,
     'jeruk' : 8500,
@@ -16,13 +18,12 @@ print("A. Tambah data buah")
 print("B. Beli")
 
 pilihanMenu = input("Pilihan menu : ")
-a = "A"
-b = "B"
+
 #jika pilihan tambah data buah
 keys = list(buah.keys())
 
 #jika pilihan tambah data buah
-if pilihanMenu == a:
+if pilihanMenu == "a" or pilihanMenu == "A":
     inputNamaBuah = input("Masukkan nama buah :")
     if inputNamaBuah == keys[0] or inputNamaBuah == keys[1] or inputNamaBuah == keys[2] or inputNamaBuah == keys[3]:
         print("Nama buah sudah ada")
@@ -32,7 +33,7 @@ if pilihanMenu == a:
         print(buah)
 
 #jika pilihan beli buah
-elif pilihanMenu == b:
+elif pilihanMenu == "b" or pilihanMenu == "B":
     buah1 = 'apel'
     buah2 = 'jeruk'
     buah3 = 'mangga'

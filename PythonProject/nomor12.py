@@ -1,6 +1,8 @@
 #pembelian buah dengan pimilahn
 print("----PEMBELIAN BUAH DENGAN PEMILIHAN----")
 
+#!!!GUNAKAN HURUF KECIL SAAT INPUT BUAH!!!
+
 buah = {
     'apel' : 5000,
     'jeruk' : 8500,
@@ -16,14 +18,10 @@ print("B. Beli")
 print("C. Hapus data buah")
 
 pilihanMenu = input("Pilihan menu : ")
-c = "A"
-d = "B"
-e = "C"
-
 keys = list(buah.keys())
 
 #jika pilihan tambah data buah
-if pilihanMenu == c:
+if pilihanMenu == "a" or pilihanMenu == "A":
     inputNamaBuah = input("Masukkan nama buah :")
     if inputNamaBuah == keys[0] or inputNamaBuah == keys[1] or inputNamaBuah == keys[2] or inputNamaBuah == keys[3]:
         print("Nama buah sudah ada")
@@ -33,13 +31,11 @@ if pilihanMenu == c:
         print(buah)
 
 #jika pilihan beli
-elif pilihanMenu == d:
+elif pilihanMenu == "b" or pilihanMenu == "B":
     buah1 = 'apel'
     buah2 = 'jeruk'
     buah3 = 'mangga'
     buah4 = 'duku'
-    a = 'y'
-    b = 'n'
     sum = 0
 
     def dataBuah(sum):
@@ -55,16 +51,16 @@ elif pilihanMenu == d:
         elif namaBuah == buah4:
             harga = buah['duku'] * kilo
         sum += harga
-        if tanya == a:
+        if tanya == "y" or tanya == "Y":
             dataBuah(sum)
-        elif tanya == b:
+        elif tanya == "n" or tanya == "N":
             print("-------------------------")
             print("Total harga: ", sum)
 
     dataBuah(sum)
 
 #jika pemiliha hapus data
-elif pilihanMenu == e:
+elif pilihanMenu == "c" or pilihanMenu == "C":
     inputNamaBuah = input("Masukkan nama buah :")
     if inputNamaBuah == keys[0] or inputNamaBuah == keys[1] or inputNamaBuah == keys[2] or inputNamaBuah == keys[3]:
         del buah[inputNamaBuah]

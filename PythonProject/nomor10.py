@@ -1,6 +1,8 @@
 #pembelian buah dengan perulangan
 print("----PEMBELIAN BUAH DENGAN PERULANGAN----")
 
+#!!!GUNAKAN HURUF KECIL SAAT INPUT BUAH!!!
+
 buah = {
     'apel' : 5000,
     'jeruk' : 8500,
@@ -12,8 +14,6 @@ buah1 = 'apel'
 buah2 = 'jeruk'
 buah3 = 'mangga'
 buah4 = 'duku'
-a = 'y'
-b = 'n'
 
 sum = 0
 
@@ -31,9 +31,9 @@ def dataBuah(sum):
     elif namaBuah == buah4:
         harga = buah['duku'] * kilo
     sum += harga
-    if tanya == a:
+    if tanya == "y" or tanya == "Y":
         dataBuah(sum)
-    elif tanya == b:
+    elif tanya == "n" or tanya == "N":
         print("-------------------------")
         print("Total harga: ", sum)
 

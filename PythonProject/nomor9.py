@@ -1,5 +1,8 @@
 #program pembelian buah
 print("----PEMBELIAN BUAH----")
+
+#!!!GUNAKAN HURUF KECIL SAAT INPUT BUAH!!!
+
 buah = {
     'apel' : 5000,
     'jeruk' : 8500,
