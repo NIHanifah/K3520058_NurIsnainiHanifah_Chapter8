@@ -9,7 +9,7 @@ buah = {
     'mangga' : 7000,
     'duku' : 6500,
 }
-
+print("Daftar buah dan harga buah")
 for key in buah:
     print (key, ":", buah[key])
 print("Menu")

@@ -10,6 +10,10 @@ buah = {
     'duku' : 6500,
 }
 
+print("Daftar  buah = ")
+for x in buah:
+    print(x)
+
 buah1 = 'apel'
 buah2 = 'jeruk'
 buah3 = 'mangga'

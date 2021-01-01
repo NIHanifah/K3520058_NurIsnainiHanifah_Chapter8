@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #membuat list
 print("-----MEMBUAT LIST-----")
 a = [1, 5, 6, 3, 6, 9, 11, 20, 12]
@@ -75,7 +74,7 @@ listString = list(penyusunMyString)
 print("---------MENGURUTKAN HURUF--------")
 listString.sort()
 print(listString)
-=======
+
 #program mengolah data sayur
 print("----SAYUR----")
 print('Menu')
@@ -108,4 +107,3 @@ elif pilihan == "b" or pilihan == "B":
 #jika pilihan menampilkan data sayur
 elif pilihan == "c" or pilihan == "C":
     print(sayur)
->>>>>>> b47d1aff0740482ffec8b4501afafbd3505311ef
